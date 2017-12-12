@@ -78,7 +78,7 @@ public class GoWorldManager : MonoBehaviour {
 			return true;
 		}
 
-		return SceneManager.GetActiveScene ().name == "Level 01";
+		return SceneManager.GetActiveScene ().name == "Town";
 	}
 
 	public void createEntity(string typeName, string entityID, bool isPlayer, float x, float y, float z,float yaw, Hashtable attrs) {
@@ -147,7 +147,7 @@ public class GoWorldManager : MonoBehaviour {
 		if (this.player) {
 			this.player.Space = this.space;
 		}
-		SceneManager.LoadScene ("Level 01", LoadSceneMode.Single);
+		SceneManager.LoadScene ("Town", LoadSceneMode.Single);
 	}
 
 	void OnLeaveSpace() {
